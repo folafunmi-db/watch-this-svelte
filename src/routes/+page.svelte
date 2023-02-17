@@ -220,7 +220,7 @@
 	{/if}
 	{#if recommendations}
 		{#each recommendations as recommendation, i (i)}
-			{#if recommendation !== ''}
+			{#if recommendation !== '' && typeof recommendation !== 'string'}
 				<div class="mb-4 rounded-lg shadow bg-white p-4">
 					{#if recommendation.title}
 						<div class="text-2xl font-bold mb-2">
